@@ -1,0 +1,96 @@
+@font-face{
+    font-family: Roboto-R;
+    src: url(font/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: Roboto-L;
+    src: url(font/Roboto-Light.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.calculator{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input{
+    font-family: Roboto-L;
+    color: #343852;
+    text-align: right;
+    padding-top: 180px;
+    padding-right: 23px;
+    margin-left: 4.5px;
+    width: 377.5px;
+    height: 250px;
+    border: none;
+    outline: none;
+    font-size: 45px;
+    background-color: rgb(224, 229, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+button{
+    font-family: Roboto-R;
+    margin-right: -5px;
+    margin-bottom: -1px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #343852;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    height: 60px;
+    width: 95px;
+    transition: background 0.8s;
+}
+
+button:hover{
+    background-color: #424663;
+    background-image: radial-gradient(circle, transparent 1%, #424663 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+
+button:active{
+    transition: background 0s;
+    background-color: #585d7e;
+    background-size: 100%;
+}
+
+.last-btn{
+    background-color: #2cb871;
+    border-bottom-right-radius: 10px;
+    transition: background 0.8s;
+}
+
+.last-btn:hover{
+    background-color: #3ece86;
+    background-image: radial-gradient(circle, transparent 1%, #3ece86 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+
+.last-btn:active{
+    transition: background 0s;
+    background-color: #54e69d;
+    background-size: 100%;
+}
+
+.color-chn-btn{
+    color: #2cb871;
+}
+
+.left-bottom-btn{
+    border-bottom-left-radius: 10px;
+}
