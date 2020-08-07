@@ -10,43 +10,46 @@
 
 <body>
     <div class="calculator">
-        <div>
-            <input id="result" type="text" autofocus>
+        <div class="input-sec" id="myAnimation">
+            <label id="mid_label"></label>
+            <label id="result"></label>
+            <label id="f_result"></label>
+            <label id="last_result"></label>
         </div>
 
         <div>
-            <button onclick="clearResult()">AC</button>
-            <button>( )</button>
+            <button onclick="myMove()">AC</button>
+            <button class>( )</button>
             <button>%</button>
-            <button class="color-chn-btn" onclick="getNumber('/')">&#247</button>
+            <button class="color-chn-btn" onclick="getOperator('/');defaultStyle()">&#247</button>
         </div>
         
         <div>
-            <button onclick="getNumber('7')">7</button>
-            <button onclick="getNumber('8')">8</button>
-            <button onclick="getNumber('9')">9</button>
-            <button class="color-chn-btn" onclick="getNumber('*')">&#215</button>
+            <button onclick="getNumber('7');defaultStyle()">7</button>
+            <button onclick="getNumber('8');defaultStyle()">8</button>
+            <button onclick="getNumber('9');defaultStyle()">9</button>
+            <button class="color-chn-btn" onclick="getOperator('*');defaultStyle()">&#215</button>
         </div>
         
         <div>
-            <button onclick="getNumber('4')">4</button>
-            <button onclick="getNumber('5')">5</button>
-            <button onclick="getNumber('6')">6</button>
-            <button class="color-chn-btn" onclick="getNumber('+')">&#8722</button>
+            <button onclick="getNumber('4');defaultStyle()">4</button>
+            <button onclick="getNumber('5');defaultStyle()">5</button>
+            <button onclick="getNumber('6');defaultStyle()">6</button>
+            <button class="color-chn-btn" onclick="getOperator('-');defaultStyle()">&#8722</button>
         </div>
         
         <div>
-            <button onclick="getNumber('1')">1</button>
-            <button onclick="getNumber('2')">2</button>
-            <button onclick="getNumber('3')">3</button>
-            <button class="color-chn-btn" onclick="getNumber('-')">&#43</button>
+            <button onclick="getNumber('1');defaultStyle()">1</button>
+            <button onclick="getNumber('2');defaultStyle()">2</button>
+            <button onclick="getNumber('3');defaultStyle()">3</button>
+            <button class="color-chn-btn" onclick="getOperator('+');defaultStyle()">&#43</button>
         </div>
         
         <div>
-            <button class="left-bottom-btn" onclick="getNumber('0')">0</button>
-            <button onclick="getNumber('.')">.</button>
+            <button class="left-bottom-btn" onclick="getNumber('0');defaultStyle()">0</button>
+            <button onclick="getNumber('.');defaultStyle()">.</button>
             <button onclick="backspaceValue()">CE</button>
-            <button class="last-btn" onclick="getResult()">=</button>
+            <button class="last-btn" onclick="myFunction(y)">=</button>
         </div>
     </div>
     <script src="app.js"></script>

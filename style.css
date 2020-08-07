@@ -23,21 +23,57 @@
     text-align: center;
 }
 
-input{
+.input-sec{
+    position: relative;
+    left: 2.5px;
     font-family: Roboto-L;
-    color: #343852;
-    text-align: right;
-    padding-top: 180px;
-    padding-right: 23px;
-    margin-left: 4.5px;
-    width: 377.5px;
+    margin: auto;
+    width: 377px;
     height: 250px;
-    border: none;
-    outline: none;
-    font-size: 45px;
     background-color: rgb(224, 229, 255);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+#f_result{
+    position: absolute;
+    right: 20px;
+    top: 199px;
+    color: #343852;
+    font-size: 30px;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+#last_result{
+    position: absolute;
+    right: 20px;
+    top: 199px;
+    color: #343852;
+    font-size: 30px;
+    opacity: 0;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+#result{
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    color: #343852;
+    font-size: 45px;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+#mid_label{
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    color: #343852;
+    font-size: 45px;
+    overflow: hidden;
+    max-width: 350px;
 }
 
 button{
@@ -52,14 +88,12 @@ button{
     font-size: 20px;
     height: 60px;
     width: 95px;
+    background-position: center;
     transition: background 0.8s;
 }
 
 button:hover{
-    background-color: #424663;
-    background-image: radial-gradient(circle, transparent 1%, #424663 1%);
-    background-position: center;
-    background-size: 15000%;
+    background: #424663 radial-gradient(circle, transparent 1%, #424663 1%) center/15000%;
 }
 
 button:active{
@@ -93,4 +127,50 @@ button:active{
 
 .left-bottom-btn{
     border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 388px) {
+    
+    .input-sec{
+        height: 223.4px;  
+        width: 337px;
+    }
+
+    button{
+        width: 85px;
+        height: 53.6px;
+        font-size: 18px;
+    }
+
+    button:focus{
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #f_result{
+        top: 178px;
+        font-size: 28px;
+        overflow: hidden;
+        max-width: 313px;
+    }
+    
+    #last_result{
+        top: 178px;
+        font-size: 28px;
+        overflow: hidden;
+        max-width: 313px;
+    }
+
+    #result{
+        top: 123px;
+        font-size: 43px;
+        overflow: hidden;
+        max-width: 313px;
+    }
+    
+    #mid_label{
+        top: 123px;
+        font-size: 43px;
+        overflow: hidden;
+        max-width: 313px;
+    }
 }
